@@ -1,0 +1,166 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+/* Reset e estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estrutura geral */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: rgb(63, 61, 61);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px rgb(243, 100, 100) solid;
+}
+
+.logo {
+  width: 200px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.navBtn {
+  font-size: 17px;
+  color: white;
+  font-family: 'Gabarito', cursive;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.navBtn:hover {
+  border-bottom: 0.5px white solid;
+}
+
+.navBtn:active {
+  background-color: rgb(109, 105, 105);
+  border: none;
+  border-radius: 3px;
+}
+
+/* Conteúdo principal */
+.content {
+  background-color: rgb(153, 38, 38);
+  color: white;
+}
+
+.title {
+  background-color: rgb(63, 61, 61);
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionTitle {
+  color: white;
+  font-family: 'Gabarito', cursive;
+  font-size: 25px;
+}
+
+.gridContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.mainContent {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 10px 10px;
+}
+
+.mainCardImg {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+}
+
+/* Cartões de categoria principal */
+.categoryCard {
+  width: 280px;
+  height: auto;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.mainCategoryCardTitle {
+  margin-top: 10px;
+  padding-left: 10px;
+  font-family: 'Gabarito', cursive;
+  font-size: 18px;
+  border-bottom: 1px white solid;
+}
+
+.mainCategoryCardDescription {
+  margin: 10px;
+  text-align: justify;
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+}
+
+/* Barra lateral */
+.sidebarContent {
+  background-color: rgb(63, 61, 61);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-width: 300px;
+}
+
+.sidebarCardTitle {
+  color: white;
+  font-family: 'Gabarito', cursive;
+  font-size: 18px;
+}
+
+
+.sidebarCardImg {
+  width: 100%;
+  height: 180px;
+  border-radius: 20px;
+}
+
+/* Rodapé */
+.footer {
+  background-color: rgb(63, 61, 61);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.footerAnchor {
+  color: white;
+  font-family: 'Gabarito', cursive;
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: white;
+}
